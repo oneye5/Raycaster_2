@@ -1,0 +1,5 @@
+﻿  Renderer.cpp
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(46,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(47,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(105,21): warning C4018: '<': signed/unsigned mismatch
+  Raycaster_2.vcxproj -> C:\Users\ocjla\source\repos\Raycaster_2\Debug\Raycaster_2.exe
