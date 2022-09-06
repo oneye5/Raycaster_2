@@ -2,6 +2,7 @@
 #include<vector>
 #include<string>
 #include<iostream>
+
 class ViewPort
 {
 #pragma region vars
@@ -9,9 +10,9 @@ public:
 	int ScreenWidth = 32;
 	int ScreenHeight = 32;
 
-	float CameraPosX = 0.0f;
-	float CameraPosY = 0.0f;
-	float CameraAngle = 0.0f;
+	float CameraPosX = 1.0f;
+	float CameraPosY = 1.0f;
+	float CameraAngle = 360.0f;
 
 	float Fov = 90.0f;
 	//render settings
@@ -19,7 +20,7 @@ public:
 	float RayStep = 0.25f;
 	float RayLimit = 100.0f;
 	float WallOffset = 0.0f;
-		
+	float wallSize = 4000.0f;
 	class RayHit
 	{
 	public:
@@ -33,10 +34,15 @@ public:
 #pragma endregion
 	RayHit castRay(float fromX, float fromY, float angle,std::vector<std::string> enviroment)
 	{
+		int mapWidth = enviroment[1].size();
+		int mapHeight = enviroment.size();
+		mapWidth--;
+		mapHeight--;
+
 		float xpos = fromX;
 		float ypos = fromY;
 		float distance = 0.0f; 
-
+		
 		while(RayLimit > distance)
 		{
 			distance += RayStep;
@@ -45,9 +51,14 @@ public:
 			//sensing
 			int	xRounded = round(xpos);
 			int yRounded = round(ypos);
-			//if ((yRounded < enviroment.size() && xRounded < enviroment[yRounded].size() && xRounded < 0 && yRounded < 0)) //CHECK OUT OF RANGE
-				if (enviroment[yRounded][xRounded] != ' ') // if is not blank
+
+				if (  // if is not blank
+					xRounded > 0 && yRounded > 0 &&
+					yRounded <= enviroment.size()-1 && xRounded <= enviroment[yRounded].size()-1 &&
+					enviroment[yRounded][xRounded] != ' '
+					) 
 				{
+					std::cout << "\nhit : " << xRounded << " , " << yRounded << " , " << enviroment[yRounded][xRounded];
 					auto rayHit = RayHit();
 					rayHit.angle = angle;
 					rayHit.charHit = enviroment[yRounded][xRounded];
@@ -57,8 +68,10 @@ public:
 					rayHit.yPos = ypos;
 					return rayHit;
 				}
-			
+
+				
 		}
+		
 		auto noHit = RayHit();
 		noHit.hit = false;
 		return noHit;
@@ -86,7 +99,7 @@ public:
 
 		return rays;
 	}
-	std::string render(std::vector<RayHit> Rays)
+	std::string render(std::vector<RayHit> rays)
 	{
 		//popualte empty screen
 		std::vector<std::string> screen;
@@ -100,7 +113,27 @@ public:
 			screen.push_back(row);
 		}
 
-		
+
+
+
+
+		//insert walls
+		for (int i = 0; i < rays.size(); i++)
+		{
+			float size;
+			size = wallSize / rays[i].distance;
+			int bottomPos = round(size / 2) + WallOffset;
+			for (int ii = 0; ii < size; ii++)
+			{
+
+			}
+		}
+
+
+
+
+
+
 		std::string Output; // convert to single string
 		for (int i = 0; i < screen.size(); i++)
 		{

@@ -1,0 +1,67 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31629.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/ocjla/source/repos/raycaster_2/raycaster_2/raycaster_2.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "f06baf696cf2dd6eb4b6981fc9bb0cc940927d806d5b5475e39488f6c1ca544a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ocjla/source/repos/raycaster_2/raycaster_2/enviroment.cpp"
+          },
+          "hashes": {
+            "sha-256": "2a00b985d10a859f84d2a1507e331decad1c647c9dc465ceae329a1f478be227"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ocjla/source/repos/raycaster_2/raycaster_2/enviroment.h"
+          },
+          "hashes": {
+            "sha-256": "a8b98b4df6e95f9897294dc19bdb1aa1352419c3c690780441949fb84e43dfd3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ocjla/source/repos/raycaster_2/raycaster_2/renderer.cpp"
+          },
+          "hashes": {
+            "sha-256": "b087c0fd6a6c9ebc9318cf59448c687f7867f99d6ea99f106080e5fab258c6c9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ocjla/source/repos/raycaster_2/raycaster_2/renderer.h"
+          },
+          "hashes": {
+            "sha-256": "d92bbbe28769545ac9ede21b47f26927e94af57afe852186475484e4b643135e"
+          }
+        }
+      ]
+    }
+  ]
+}

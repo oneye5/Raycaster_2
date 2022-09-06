@@ -8,13 +8,10 @@
 #include<C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp>
 int main()
 {
-	auto viewPort = ViewPort();
-	auto rays = viewPort.castRays(map.getMap());
-	std::cout << viewPort.render(rays);
-	std::cout << "\n" << "rays: " << rays.size();
-	for (int i = 0; i < rays.size(); i++)
-	{
-		std::cout << "\n angle: " << rays[i].angle << " char: " << rays[i].charHit << " dist: " << rays[i].distance << " hit: " << rays[i].hit;
-	}
-	
+	auto viewport = ViewPort();
+	auto enviroment = map.getMap();
+	auto rays = viewport.castRays(enviroment);
+	std::cout << "\n hit rays = " << rays.size() << "\n";
+	auto screen = viewport.render(rays);
+	std::cout << screen;
 }

@@ -1,5 +1,18 @@
-﻿  Renderer.cpp
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(46,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(47,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(105,21): warning C4018: '<': signed/unsigned mismatch
+﻿  Raycaster_2.cpp
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Enviroment.cpp(3,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Enviroment.cpp(5,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(52,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(53,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(57,15): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(57,50): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(116,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(127,21): warning C4018: '<': signed/unsigned mismatch
+  Renderer.cpp
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(52,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(53,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(57,15): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(57,50): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(116,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(127,21): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   Raycaster_2.vcxproj -> C:\Users\ocjla\source\repos\Raycaster_2\Debug\Raycaster_2.exe

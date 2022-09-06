@@ -1,4 +1,18 @@
-﻿  Renderer.cpp
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(46,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(47,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+﻿  Enviroment.cpp
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Enviroment.cpp(3,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Enviroment.cpp(5,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Raycaster_2.cpp
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Enviroment.cpp(3,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Enviroment.cpp(5,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(37,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(38,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(49,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(50,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Renderer.cpp
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(37,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(38,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(49,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(50,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  LINK : C:\Users\ocjla\source\repos\Raycaster_2\x64\Debug\Raycaster_2.exe not found or not built by the last incremental link; performing full link
   Raycaster_2.vcxproj -> C:\Users\ocjla\source\repos\Raycaster_2\x64\Debug\Raycaster_2.exe
