@@ -3,24 +3,25 @@
 #include<string>
 #include<iostream>
 
+
 class ViewPort
 {
 #pragma region vars
 public:
-	int ScreenWidth = 32;
-	int ScreenHeight = 32;
+	int ScreenWidth = 80;
+	int ScreenHeight = 40;
 
-	float CameraPosX = 1.0f;
-	float CameraPosY = 1.0f;
-	float CameraAngle = 360.0f;
+	float CameraPosX = 32.0f;
+	float CameraPosY = 5.0f;
+	float CameraAngle = 0.0f;
 
-	float Fov = 90.0f;
+	float Fov = 50.0f;
 	//render settings
 	float RayCount = 200.0f;
 	float RayStep = 0.25f;
 	float RayLimit = 100.0f;
-	float WallOffset = 0.0f;
-	float wallSize = 4000.0f;
+	float WallOffset = 0;
+	float wallSize = 50.0f;
 	class RayHit
 	{
 	public:
@@ -46,8 +47,8 @@ public:
 		while(RayLimit > distance)
 		{
 			distance += RayStep;
-			xpos += sinf(angle) * RayStep;
-			ypos += cosf(angle) * RayStep;
+			xpos += sinf(angle * 0.0174533) * RayStep;
+			ypos += cosf(angle * 0.0174533) * RayStep;
 			//sensing
 			int	xRounded = round(xpos);
 			int yRounded = round(ypos);
@@ -58,7 +59,6 @@ public:
 					enviroment[yRounded][xRounded] != ' '
 					) 
 				{
-					std::cout << "\nhit : " << xRounded << " , " << yRounded << " , " << enviroment[yRounded][xRounded];
 					auto rayHit = RayHit();
 					rayHit.angle = angle;
 					rayHit.charHit = enviroment[yRounded][xRounded];
@@ -123,9 +123,25 @@ public:
 			float size;
 			size = wallSize / rays[i].distance;
 			int bottomPos = round(size / 2) + WallOffset;
+
+			
+
 			for (int ii = 0; ii < size; ii++)
 			{
+				auto ray = rays[i];
+				int ypos = ray.yPos + ii;
+				float realativeAngle = (CameraAngle - ray.angle) + Fov/2;
+				float PixelPerDegree = ScreenWidth / Fov  ;
 
+				int x = round(realativeAngle * PixelPerDegree);
+				int y = ray.yPos + ii;
+
+				if (screen.size()-1 >= y && y >= 0) 
+					{
+						screen[y][x] = ray.charHit;
+					}
+			
+				
 			}
 		}
 
@@ -142,4 +158,5 @@ public:
 		}
 		return Output;
 	}
+	
 };
