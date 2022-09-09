@@ -17,17 +17,17 @@ public:
 
 	float Fov = 70.0f;
 	//render settings
-	int newLines = 300;
-	float RayCount = 400.0f;
-	float RayStep = 0.3f;
-	float RayLimit = 60.0f;
-	float screenOffset = -20;
-	float wallSize = 150.0f;
+	int newLines = 200;
+	float RayCount = 300.0f;
+	float RayStep = 0.1f;
+	float RayLimit = 64.0f;
+	float screenOffset = -22;
+	float wallSize = 300.0f;
 
-	std::string Shades = "#Xx=-.";
+	std::string Shades = "#Xy=+.-";
 		//"█▓▒░·";
 	float shadeMulti = 0.2f;
-	float shadeAdditive = -0.3f;
+	float shadeAdditive = -0.4f;
 
 	class RayHit
 	{
@@ -140,7 +140,7 @@ public:
 			auto ray = rays[i];
 			float ySize = wallSize / ray.distance;
 			int midpoint = ScreenHeight / 2;
-			int bottomPos = round(midpoint + (ySize));
+			int bottomPos = round(midpoint + (ySize * 0.1));
 			/*
 			if (bottomPos > ScreenHeight)
 				bottomPos = ScreenHeight;

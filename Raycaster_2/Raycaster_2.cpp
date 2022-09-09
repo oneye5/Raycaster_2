@@ -53,6 +53,9 @@ int main()
 	bool running = true;
 	auto viewport = ViewPort();
 	auto player = Player();
+#if defined(NOSYNC)
+	std::cout.sync_with_stdio(false);
+#endif
 	 do
 	 { 
 		 if (GetKeyState('E') < 0)
@@ -92,12 +95,14 @@ int main()
 		auto rays = viewport.castRays(enviroment);
 		auto screen = viewport.render(rays);
 		auto blank = viewport.blankSpace();
-		std::cout << blank << screen;
+
+		screen = blank + screen;
+		std::cout << screen;
 
 		//viewport.CameraAngle += 1;
 		std::cout << "\n xy rot :" << viewport.CameraPosX << " " << viewport.CameraPosY << " " << viewport.CameraAngle;
 		std::cout << "\nfov : " << viewport.Fov << " offset : " << viewport.screenOffset << " wallsize : " << viewport.wallSize << " raystep : " << viewport.RayStep;
-		Sleep(10);
+		Sleep(1);
 		
 
 	 } while (running);

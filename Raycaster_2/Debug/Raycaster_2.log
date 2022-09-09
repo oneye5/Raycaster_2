@@ -13,7 +13,7 @@ C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(65,50): warning
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(111,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(112,13): warning C4018: '>': signed/unsigned mismatch
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(138,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(143,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(143,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(150,10): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(154,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(156,25): warning C4018: '>=': signed/unsigned mismatch
@@ -22,8 +22,8 @@ C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(44,76): warn
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(45,76): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(47,82): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(48,82): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(84,29): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(88,29): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(87,29): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(91,29): warning C4305: '-=': truncation from 'double' to 'float'
   Renderer.cpp
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(57,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(58,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
@@ -34,7 +34,7 @@ C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(65,50): warning
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(111,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(112,13): warning C4018: '>': signed/unsigned mismatch
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(138,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(143,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(143,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(150,10): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(154,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(156,25): warning C4018: '>=': signed/unsigned mismatch
