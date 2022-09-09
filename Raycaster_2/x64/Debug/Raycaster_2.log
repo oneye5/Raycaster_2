@@ -10,10 +10,9 @@ C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(50,23): warning
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(51,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(53,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(54,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(125,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(132,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(126,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(135,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(136,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(137,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(44,76): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(45,76): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Raycaster_2.cpp(47,82): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
@@ -25,9 +24,8 @@ C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(50,23): warning
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(51,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(53,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(54,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(125,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(132,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(126,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(135,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(136,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ocjla\source\repos\Raycaster_2\Raycaster_2\Renderer.cpp(137,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Generating Code...
   Raycaster_2.vcxproj -> C:\Users\ocjla\source\repos\Raycaster_2\x64\Debug\Raycaster_2.exe

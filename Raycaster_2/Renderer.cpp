@@ -1,4 +1,4 @@
-#include "Renderer.h"
+﻿#include "Renderer.h"
 #include<vector>
 #include<string>
 #include<iostream>
@@ -8,20 +8,27 @@ class ViewPort
 {
 #pragma region vars
 public:
-	int ScreenWidth = 80;
-	int ScreenHeight = 40;
+	int ScreenWidth = 256;
+	int ScreenHeight = 72;
 
 	float CameraPosX = 32.0f;
 	float CameraPosY = 5.0f;
 	float CameraAngle = 0.0f;
 
-	float Fov = 50.0f;
+	float Fov = 70.0f;
 	//render settings
-	float RayCount = 200.0f;
-	float RayStep = 0.25f;
-	float RayLimit = 100.0f;
-	float WallOffset = 0;
-	float wallSize = 50.0f;
+	int newLines = 300;
+	float RayCount = 400.0f;
+	float RayStep = 0.3f;
+	float RayLimit = 60.0f;
+	float screenOffset = -20;
+	float wallSize = 150.0f;
+
+	std::string Shades = "#Xx=-.";
+		//"█▓▒░·";
+	float shadeMulti = 0.2f;
+	float shadeAdditive = -0.3f;
+
 	class RayHit
 	{
 	public:
@@ -99,6 +106,16 @@ public:
 
 		return rays;
 	}
+	char getPixelShade(RayHit ray)
+	{
+		int index = round((ray.distance * shadeMulti)+shadeAdditive);
+		if (index > Shades.size()-1)
+			index = Shades.size() - 1;
+		if (index < 0)
+			index = 0;
+
+		return Shades[index];
+	}
 	std::string render(std::vector<RayHit> rays)
 	{
 		//popualte empty screen
@@ -120,26 +137,27 @@ public:
 		//insert walls
 		for (int i = 0; i < rays.size(); i++)
 		{
-			float size;
-			size = wallSize / rays[i].distance;
-			int bottomPos = round(size / 2) + WallOffset;
+			auto ray = rays[i];
+			float ySize = wallSize / ray.distance;
+			int midpoint = ScreenHeight / 2;
+			int bottomPos = round(midpoint + (ySize));
+			/*
+			if (bottomPos > ScreenHeight)
+				bottomPos = ScreenHeight;
+			*/ //							normalize close values
+			float realativeAngle = (CameraAngle - ray.angle) + Fov/2;
+			float PixelPerDegree = ScreenWidth / Fov  ;
+			int x = round(realativeAngle * PixelPerDegree);
 
-			
-
-			for (int ii = 0; ii < size; ii++)
+			for (int ii = 0; ii < ySize; ii++)
 			{
-				auto ray = rays[i];
-				int ypos = ray.yPos + ii;
-				float realativeAngle = (CameraAngle - ray.angle) + Fov/2;
-				float PixelPerDegree = ScreenWidth / Fov  ;
-
-				int x = round(realativeAngle * PixelPerDegree);
-				int y = ray.yPos + ii;
+				int y = bottomPos + ii + screenOffset;
 
 				if (screen.size()-1 >= y && y >= 0) 
-					{
-						screen[y][x] = ray.charHit;
-					}
+				{
+				//	screen[y][x] = ray.charHit;
+					screen[y][x] = getPixelShade( ray);
+				}
 			
 				
 			}
@@ -158,5 +176,13 @@ public:
 		}
 		return Output;
 	}
-	
+	std::string blankSpace()
+	{
+		std::string blank = "";
+		for (int i = 0; i < newLines; i++)
+		{
+			blank += "\n";
+		}
+		return blank;
+	}
 };
